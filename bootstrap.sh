@@ -1,6 +1,8 @@
 #!/bin/bash
 # Set up packages
 
+set -e
+
 apt-get update -y
 apt-get upgrade -y
 

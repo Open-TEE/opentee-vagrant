@@ -1,6 +1,8 @@
 #!/bin/bash
 # Set up user environment
 
+set -e
+
 # Create bin directory for vagrant user
 mkdir /home/vagrant/bin
 

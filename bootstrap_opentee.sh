@@ -1,6 +1,8 @@
 #!/bin/bash
 # Pull down OpenTEE project
 
+set -e
+
 cd $HOME/open-tee
 
 repo init -u https://github.com/Open-TEE/manifest.git
