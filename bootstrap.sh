@@ -16,7 +16,7 @@ apt-get install build-essential -y
 apt-get install git -y
 
 # Use PPA packages for QBS
-add-apt-repository ppa:alexey-ivanov/qbs-daily -y
+add-apt-repository ppa:qutim/qutim
 apt-get update -y
 apt-get install qbs -y
 
@@ -31,3 +31,6 @@ apt-get install uuid-dev -y
 
 # Install libelf development files
 apt-get install libelf-dev -y
+
+# Install autotools
+apt-get install autoconf libtool -y
