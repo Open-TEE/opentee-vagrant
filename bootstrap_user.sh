@@ -10,7 +10,7 @@ mkdir /home/vagrant/bin
 PATH=/home/vagrant/bin:$PATH
 
 # Download repo tool
-curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > /home/vagrant/bin/repo
+curl -sS http://commondatastorage.googleapis.com/git-repo-downloads/repo > /home/vagrant/bin/repo
 chmod +x /home/vagrant/bin/repo
 
 # Configure QBS

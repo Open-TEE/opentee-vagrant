@@ -3,34 +3,26 @@
 
 set -e
 
+# Use PPA packages for QBS
+add-apt-repository ppa:qutim/qutim
+
 apt-get update -y
 apt-get upgrade -y
 
 # Install htop
-apt-get install htop -y
-
-# Install development essentials
-apt-get install build-essential -y
-
-# Install GIT
-apt-get install git -y
-
-# Use PPA packages for QBS
-add-apt-repository ppa:qutim/qutim
-apt-get update -y
-apt-get install qbs -y
-
-# Install pkg-config
-apt-get install pkg-config -y
-
-# Install OpenSSL development files
-apt-get install libssl-dev -y
-
-# Install UUID library development files
-apt-get install uuid-dev -y
-
-# Install libelf development files
-apt-get install libelf-dev -y
-
-# Install autotools
-apt-get install autoconf libtool -y
+#         development essentials
+#         GIT
+#         pkg-config
+#         OpenSSL development files
+#         UUID library development files
+#         libelf development files
+#         autotools
+apt-get install -y htop \
+                   build-essential \
+                   git \
+                   qbs \
+                   pkg-config \
+                   libssl-dev \
+                   uuid-dev \
+                   libelf-dev \
+                   autoconf libtool

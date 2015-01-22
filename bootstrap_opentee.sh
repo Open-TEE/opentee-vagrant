@@ -6,7 +6,7 @@ set -e
 cd $HOME/open-tee
 
 repo init -u https://github.com/Open-TEE/manifest.git
-repo sync -j4
+repo sync -j10 -q --no-clone-bundle
 
 echo ""
 echo "========================="
