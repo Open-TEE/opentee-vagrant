@@ -25,4 +25,6 @@ apt-get install -y htop \
                    libssl-dev \
                    uuid-dev \
                    libelf-dev \
-                   autoconf libtool
+                   autoconf \
+                   libtool \
+                   libfuse-dev
